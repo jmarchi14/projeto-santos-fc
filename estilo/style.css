@@ -1,17 +1,28 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
     --cor1: #000000;
     --cor2: #FFFFFF;
     --cor3: #C69F0F;
+    --cor4: #0C0C0C;
     --fonte-padrao: arial, verdana, helvetica, sans-serif;
-    --fonte-destaque: 'Noto Sans';
+    --fonte-destaque:  "Noto Sans";
     }
 
     *{
         margin: 0px;
         padding: 0px;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+    a:hover{
+        text-decoration: underline ;
     }
 
     body{
@@ -33,31 +44,82 @@
     header > h1{
         font-family: var(--fonte-destaque);
         font-size: 3.5em;
-        font-weight: 500;
         text-align: center;
+        margin-bottom: 30px;
+    }
+
+    header > hr{
+        max-width: 200px;
+        margin: auto;
+        box-shadow: 0px 0px 6px white;
     }
 
     main{
-        min-width: 250px;
-        max-width: 1200px;
-        padding: 10px;
+        min-width: 300px;
+        max-width: 1600px;
+        padding: 10px; 
         margin: auto;
     }
 
-    main > img{
+    section{
+        display: flex;
+        margin-bottom: 50px;
+    }
+
+    main > section > img{
+        margin: auto;
         
     }
 
     .p1{
-        display: inline-block;
-        max-width: 450px;
-        max-height: 400px;
+        min-width: 200px;
+        max-width: 600px;
+        padding: 30px;
+        font-family: var(--fonte-padrao);
+        text-align: justify;
+        font-size: 20px;
+        text-indent: 30px;
+        line-height: 30px;
+    }
+
+    .aside{
+        margin: auto;
+        max-width: 1000px;
+        min-height: 200px;
+        padding: 20px;
+    }
+
+    aside > h2{
+        font-size: 2em;
+        font-weight: 800;
+        text-align: center;
+        color: black;
+        background-image: linear-gradient(to right,transparent, #C69F0F, transparent);
+    }
+
+    aside > p{
+        font-size: 20px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    aside > a{
+        display: block;
+        text-align: center;
+    }
+
+    nav > a{
+        display: block;
+        text-align: center;
+        margin: 30px;
+        font-size: 20px;
+        font-weight: bold;
         padding: 10px;
     }
 
-    .p2{
-        display: inline-block;
-        max-width: 500px;
-        max-height: 400px;
-        padding: 10px;
+    nav > a:hover{
+        text-decoration: none;
+        background-image: linear-gradient(to right, transparent, #C69F0F, transparent);
+        color: #000000;
+        font-weight: bold;
     }
