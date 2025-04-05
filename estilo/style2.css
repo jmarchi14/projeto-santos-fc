@@ -112,7 +112,7 @@ aside > p{
 aside >h2{
     background-image: linear-gradient(to right, transparent, #C69F0F, transparent);
     color: var(--cor1);
-    font-family: var(--fonte-destaque);
+    font-family: var(--fonte-padrao);
     font-size: 2em;
     text-align: center;
     font-weight: bold;
@@ -166,7 +166,7 @@ footer{
 }
 
 footer > h3{
-    font-family: var(--fonte-destaque);
+    font-family: var(--fonte-padrao);
     margin-top: 30px;
     margin-bottom: 20px;
     text-align: center;
@@ -184,5 +184,5 @@ ul >li{
     max-width: 400px;
     list-style-position: inside;
     padding: 10px;
-    font-family: var(--fonte-destaque);
+    font-family: var(--fonte-padrao);
 }
